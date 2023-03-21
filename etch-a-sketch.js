@@ -5,7 +5,7 @@ container.setAttribute(
 );
 for (let j = 0; j < 256; j++) {
   const cell = document.createElement("div");
-  cell.setAttribute("style", "border: 1px solid black;");
+  cell.setAttribute("style", "border: 0.5px solid black;");
   cell.classList.add("cell");
   container.appendChild(cell);
 }
@@ -34,7 +34,7 @@ button.addEventListener("click", () => {
     // create new cells
     for (let j = 0; j < dimension * dimension; j++) {
       const cell = document.createElement("div");
-      cell.setAttribute("style", "border: 1px solid black;");
+      cell.setAttribute("style", "border: 0.5px solid black;");
       cell.classList.add("cell");
       container.appendChild(cell);
     }
